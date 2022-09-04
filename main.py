@@ -22,3 +22,5 @@ plt.axis("off")
 plt.imshow(output)
 plt.show()
 
+# Number of Ojbects In The Image Are:
+print("Number Of Objects In This Image Are: " + str(len(label)))
