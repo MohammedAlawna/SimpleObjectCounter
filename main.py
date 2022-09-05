@@ -15,6 +15,7 @@ plt.axis("off")
 # Creating boxes, labels around the objects
 box, label, count = cv.detect_common_objects(img)
 output = draw_bbox(img, box, label, count)
+print("Number Of Objects In This Image Are: " + str(len(label)))
 
 output = cv2.cvtColor(output, cv2.COLOR_BGR2RGB)
 plt.figure(figsize=(10, 10))
@@ -22,5 +23,6 @@ plt.axis("off")
 plt.imshow(output)
 plt.show()
 
+
+
 # Number of Ojbects In The Image Are:
-print("Number Of Objects In This Image Are: " + str(len(label)))
